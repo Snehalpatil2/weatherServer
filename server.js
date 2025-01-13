@@ -4,7 +4,7 @@ const fetch = require("node-fetch"); // Ensure this is installed via npm
 require('dotenv').config(); // To use environment variables
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 app.use(cors());
 app.use(express.json());
